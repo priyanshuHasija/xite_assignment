@@ -4,7 +4,7 @@ Command: docker build -t kafkaimage1 .
 2) Run docker compose file to setup the infrastructure.
 Command: docker compose up -d
 This command will instantiate zookeeper and kafka clusters. 
-kafka-setup container is rsponsible for topic creation and ingesting data into topic A.
+kafka-setup container is responsible for topic creation and ingesting data into topic A.
 
 Question2 and 3: Main.py script is responsible for consuming data from topicA. Each message is checked for its timestamp. 
 If message timestamp falls within the specified range, message will be sent to topicA.
